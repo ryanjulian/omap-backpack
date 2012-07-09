@@ -3496,15 +3496,17 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <wire x1="11.3" y1="7.03" x2="11.3" y2="4.15" width="0.2032" layer="21"/>
 <wire x1="11.3" y1="4.15" x2="10.25" y2="4.15" width="0.2032" layer="21"/>
 <text x="-11.811" y="4.066" size="0.6096" layer="25" font="vector" ratio="25" rot="R90">J2</text>
-<wire x1="-12.568" y1="7.5" x2="13.7" y2="7.5" width="0" layer="51"/>
-<wire x1="13.7" y1="7.5" x2="13.7" y2="-7.5" width="0" layer="51"/>
-<wire x1="13.7" y1="-7.5" x2="-12.568" y2="-7.5" width="0" layer="51"/>
-<wire x1="-13.3" y1="-6.768" x2="-13.3" y2="6.768" width="0" layer="51"/>
-<wire x1="-13.3" y1="-6.768" x2="-12.568" y2="-7.5" width="0.0001" layer="51" curve="-51.077575"/>
-<wire x1="-13.3" y1="6.768" x2="-12.568" y2="7.5" width="0.0001" layer="51" curve="51.077575"/>
-<wire x1="-12.568" y1="7.5" x2="13.7" y2="7.5" width="0.2032" layer="21"/>
+<wire x1="-12.568" y1="7.5" x2="13.7" y2="7.5" width="0.05" layer="51"/>
+<wire x1="13.7" y1="7.5" x2="13.7" y2="-7.5" width="0.05" layer="51"/>
+<wire x1="13.7" y1="-7.5" x2="-12.568" y2="-7.5" width="0.05" layer="51"/>
+<wire x1="-13.3" y1="-6.768" x2="-13.3" y2="6.768" width="0.05" layer="51"/>
+<wire x1="-13.3" y1="-6.768" x2="-12.568" y2="-7.5" width="0.05" layer="51" curve="-51.077575"/>
+<wire x1="-13.3" y1="6.768" x2="-12.568" y2="7.5" width="0.05" layer="51" curve="51.077575"/>
+<wire x1="-12.568" y1="7.5" x2="-10.25" y2="7.5" width="0.2032" layer="21"/>
+<wire x1="10.25" y1="7.5" x2="13.7" y2="7.5" width="0.2032" layer="21"/>
 <wire x1="13.7" y1="7.5" x2="13.7" y2="-7.5" width="0.2032" layer="21"/>
-<wire x1="13.7" y1="-7.5" x2="-12.568" y2="-7.5" width="0.2032" layer="21"/>
+<wire x1="13.7" y1="-7.5" x2="10.25" y2="-7.5" width="0.2032" layer="21"/>
+<wire x1="-10.25" y1="-7.5" x2="-12.568" y2="-7.5" width="0.2032" layer="21"/>
 <wire x1="-13.3" y1="-6.768" x2="-13.3" y2="6.768" width="0.2032" layer="21"/>
 <wire x1="-13.3" y1="-6.768" x2="-12.568" y2="-7.5" width="0.2032" layer="21" curve="-51.077575"/>
 <wire x1="-13.3" y1="6.768" x2="-12.568" y2="7.5" width="0.2032" layer="21" curve="51.077575"/>
@@ -4089,7 +4091,6 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <part name="JP11" library="stan" deviceset="MPCS6P" device="H"/>
 <part name="C30" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
 <part name="C31" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
-<part name="SHIFT2" library="user" deviceset="TXS0108E" device=""/>
 <part name="SHIFT1" library="user" deviceset="TXS0108E" device=""/>
 <part name="R18" library="rcl" deviceset="R-US_" device="R0402" value="4.7k"/>
 <part name="C32" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
@@ -4107,7 +4108,6 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <instance part="JP11" gate="G$1" x="-124.46" y="189.23" rot="MR180"/>
 <instance part="C30" gate="G$1" x="2.54" y="185.42" rot="R90"/>
 <instance part="C31" gate="G$1" x="12.7" y="180.34" rot="R270"/>
-<instance part="SHIFT2" gate="G$1" x="-55.88" y="-40.64"/>
 <instance part="SHIFT1" gate="G$1" x="-35.56" y="-7.62"/>
 <instance part="R18" gate="G$1" x="-66.04" y="25.4" rot="R180"/>
 <instance part="C32" gate="G$1" x="-15.24" y="25.4" smashed="yes" rot="R90">
@@ -4390,7 +4390,6 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <junction x="-10.16" y="40.64"/>
 <junction x="-10.16" y="25.4"/>
 <label x="-116.84" y="12.7" size="1.778" layer="95"/>
-<pinref part="SHIFT2" gate="G$1" pin="GND"/>
 <pinref part="R18" gate="G$1" pin="1"/>
 <pinref part="SHIFT1" gate="G$1" pin="GND"/>
 <pinref part="C32" gate="G$1" pin="2"/>
@@ -4448,7 +4447,6 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <junction x="-33.02" y="15.24"/>
 <label x="-116.84" y="7.62" size="1.778" layer="95"/>
 <pinref part="SHIFT1" gate="G$1" pin="VCCB"/>
-<pinref part="SHIFT2" gate="G$1" pin="VCCB"/>
 <pinref part="C33" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -4494,9 +4492,7 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <junction x="-38.1" y="25.4"/>
 <label x="-116.84" y="10.16" size="1.778" layer="95"/>
 <pinref part="SHIFT1" gate="G$1" pin="VCCA"/>
-<pinref part="SHIFT2" gate="G$1" pin="VCCA"/>
 <pinref part="SHIFT1" gate="G$1" pin="OE"/>
-<pinref part="SHIFT2" gate="G$1" pin="OE"/>
 <pinref part="R18" gate="G$1" pin="2"/>
 <pinref part="C32" gate="G$1" pin="1"/>
 </segment>
@@ -4662,7 +4658,6 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <wire x1="-76.2" y1="-33.02" x2="-76.2" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="-76.2" y1="-20.32" x2="-93.98" y2="-20.32" width="0.1524" layer="91"/>
 <label x="-116.84" y="-20.32" size="1.778" layer="95"/>
-<pinref part="SHIFT2" gate="G$1" pin="A1"/>
 </segment>
 </net>
 <net name="OMAP_SPI4_CS0" class="0">
@@ -4675,7 +4670,6 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <wire x1="-78.74" y1="-35.56" x2="-78.74" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="-78.74" y1="-22.86" x2="-93.98" y2="-22.86" width="0.1524" layer="91"/>
 <label x="-116.84" y="-22.86" size="1.778" layer="95"/>
-<pinref part="SHIFT2" gate="G$1" pin="A2"/>
 </segment>
 </net>
 <net name="OMAP_SPI4_IRQ" class="0">
@@ -4688,7 +4682,6 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <wire x1="-81.28" y1="-38.1" x2="-81.28" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="-81.28" y1="-25.4" x2="-93.98" y2="-25.4" width="0.1524" layer="91"/>
 <label x="-116.84" y="-25.4" size="1.778" layer="95"/>
-<pinref part="SHIFT2" gate="G$1" pin="A3"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -4755,7 +4748,6 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <wire x1="-12.7" y1="-22.86" x2="7.62" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="-35.56" x2="-12.7" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="-35.56" x2="-12.7" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="SHIFT2" gate="G$1" pin="B2"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -4763,7 +4755,6 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <wire x1="-40.64" y1="-38.1" x2="-10.16" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="-38.1" x2="-10.16" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="-25.4" x2="7.62" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="SHIFT2" gate="G$1" pin="B3"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -4771,7 +4762,6 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <wire x1="-15.24" y1="-20.32" x2="7.62" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="-33.02" x2="-15.24" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="-33.02" x2="-15.24" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="SHIFT2" gate="G$1" pin="B1"/>
 </segment>
 </net>
 </nets>
