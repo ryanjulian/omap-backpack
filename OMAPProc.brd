@@ -8,9 +8,9 @@
 </settings>
 <grid distance="3" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Ground" color="10" fill="1" visible="yes" active="yes"/>
-<layer number="3" name="Power" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Ground" color="10" fill="1" visible="no" active="yes"/>
+<layer number="3" name="Power" color="13" fill="1" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
 <layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
@@ -23,20 +23,20 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
@@ -953,8 +953,8 @@ Source: http://www.ti.com/lit/ml/mpqf116g/mpqf116g.pdf</description>
 <smd name="7" x="0.75" y="-1.775" dx="0.95" dy="0.28" layer="1" roundness="100" rot="R90"/>
 <smd name="8" x="1.25" y="-1.775" dx="0.95" dy="0.28" layer="1" roundness="100" rot="R90"/>
 <circle x="-1.6" y="-1.1" radius="0.3" width="0" layer="51"/>
-<text x="-2.3" y="2.7" size="0.2022" layer="25" font="vector" ratio="25" align="top-left">&gt;NAME</text>
-<text x="-2.3" y="-2.7" size="0.2022" layer="27" font="vector" ratio="25">&gt;VALUE</text>
+<text x="-2.3" y="3.1572" size="0.6096" layer="25" font="vector" ratio="25" align="top-left">&gt;NAME</text>
+<text x="-2.3" y="-3.081" size="0.6096" layer="27" font="vector" ratio="25">&gt;VALUE</text>
 <wire x1="-2.9464" y1="2.4384" x2="-2.9464" y2="-2.4384" width="0" layer="39"/>
 <wire x1="-2.9464" y1="-2.4384" x2="2.9464" y2="-2.4384" width="0" layer="39"/>
 <wire x1="2.9464" y1="-2.4384" x2="2.9464" y2="2.4384" width="0" layer="39"/>
@@ -1529,40 +1529,83 @@ Source: http://www.ti.com/lit/ml/mpqf116g/mpqf116g.pdf</description>
 <wire x1="6.5" y1="1.7" x2="6.5" y2="1.2" width="0.1524" layer="21"/>
 <wire x1="-6.5" y1="1.7" x2="-6.5" y2="1.2" width="0.1524" layer="21"/>
 </package>
-</packages>
-</library>
-<library name="SparkFun-Electromechanical">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find anything that moves- switches, relays, buttons, potentiometers. Also, anything that goes on a board but isn't electrical in nature- screws, standoffs, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="TACTILE-SWITCH-1101NE">
-<description>Sparkfun SKU# COM-08229</description>
-<wire x1="-3" y1="1.1" x2="-3" y2="-1.1" width="0.127" layer="51"/>
-<wire x1="3" y1="1.1" x2="3" y2="-1.1" width="0.127" layer="51"/>
-<wire x1="-2.75" y1="1.75" x2="-3" y2="1.5" width="0.127" layer="21" curve="90"/>
-<wire x1="-2.75" y1="1.75" x2="2.75" y2="1.75" width="0.127" layer="21"/>
-<wire x1="2.75" y1="1.75" x2="3" y2="1.5" width="0.127" layer="21" curve="-90"/>
-<wire x1="3" y1="-1.5" x2="2.65" y2="-1.75" width="0.127" layer="21" curve="-90"/>
-<wire x1="2.65" y1="-1.75" x2="-2.75" y2="-1.75" width="0.127" layer="21"/>
-<wire x1="-3" y1="-1.5" x2="-2.75" y2="-1.75" width="0.127" layer="21" curve="90"/>
-<wire x1="-3" y1="-1.5" x2="-3" y2="-1.1" width="0.127" layer="21"/>
-<wire x1="-3" y1="1.1" x2="-3" y2="1.5" width="0.127" layer="21"/>
-<wire x1="3" y1="1.1" x2="3" y2="1.5" width="0.127" layer="21"/>
-<wire x1="3" y1="-1.5" x2="3" y2="-1.1" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="0.75" x2="1.5" y2="0.75" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-0.75" x2="-1.5" y2="-0.75" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="-0.75" x2="-1.5" y2="0.75" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-0.75" x2="1.5" y2="0.75" width="0.127" layer="21"/>
-<wire x1="-2" y1="0" x2="-1" y2="0" width="0.127" layer="51"/>
-<wire x1="-1" y1="0" x2="0.1" y2="0.5" width="0.127" layer="51"/>
-<wire x1="0.3" y1="0" x2="2" y2="0" width="0.127" layer="51"/>
-<smd name="P$1" x="-3.15" y="0" dx="2.3" dy="1.6" layer="1" rot="R180"/>
-<smd name="P$2" x="3.15" y="0" dx="2.3" dy="1.6" layer="1" rot="R180"/>
-<text x="-3" y="2" size="0.762" layer="25">&gt;NAME</text>
-<text x="-3" y="-2.7" size="0.762" layer="27">&gt;VALUE</text>
+<package name="KMR421G">
+<smd name="3" x="2.05" y="0.8" dx="0.9" dy="1" layer="1"/>
+<smd name="1" x="2.05" y="-0.75" dx="0.9" dy="1" layer="1"/>
+<smd name="2" x="-2.05" y="-0.75" dx="0.9" dy="1" layer="1"/>
+<rectangle x1="-2.4" y1="0.5" x2="-2" y2="1.1" layer="51"/>
+<smd name="4" x="-2.05" y="0.8" dx="0.9" dy="1" layer="1"/>
+<rectangle x1="-2.4" y1="-1.05" x2="-2" y2="-0.45" layer="51"/>
+<rectangle x1="2" y1="0.5" x2="2.4" y2="1.1" layer="51"/>
+<rectangle x1="2" y1="-1.05" x2="2.4" y2="-0.45" layer="51"/>
+<wire x1="-2" y1="1.2" x2="-2" y2="-1.15" width="0.05" layer="51"/>
+<wire x1="-2" y1="-1.15" x2="-1.75" y2="-1.4" width="0.05" layer="51" curve="90"/>
+<wire x1="-1.75" y1="-1.4" x2="1.75" y2="-1.4" width="0.05" layer="51"/>
+<wire x1="1.75" y1="-1.4" x2="2" y2="-1.15" width="0.05" layer="51" curve="90"/>
+<wire x1="2" y1="-1.15" x2="2" y2="1.2" width="0.05" layer="51"/>
+<wire x1="2" y1="1.2" x2="1.75" y2="1.4" width="0.05" layer="51" curve="90"/>
+<wire x1="1.75" y1="1.4" x2="-1.75" y2="1.4" width="0.05" layer="51"/>
+<wire x1="-1.75" y1="1.4" x2="-2" y2="1.2" width="0.05" layer="51" curve="90"/>
+<smd name="CASE" x="0" y="1.45" dx="1.7" dy="0.55" layer="1"/>
+<wire x1="-1.2" y1="0.65" x2="0" y2="0.65" width="0.1" layer="51"/>
+<wire x1="0" y1="0.65" x2="1.2" y2="0.65" width="0.1" layer="51"/>
+<wire x1="1.2" y1="-0.65" x2="0" y2="-0.65" width="0.1" layer="51"/>
+<wire x1="0" y1="-0.65" x2="-1.2" y2="-0.65" width="0.1" layer="51"/>
+<wire x1="0" y1="-0.65" x2="0" y2="-0.25" width="0.1" layer="51"/>
+<wire x1="0" y1="0.65" x2="0" y2="0.3" width="0.1" layer="51"/>
+<wire x1="0" y1="0.3" x2="0.25" y2="-0.2" width="0.1" layer="51"/>
+<rectangle x1="-0.45" y1="1.4" x2="0.55" y2="1.5" layer="51"/>
+<wire x1="-2" y1="0.1" x2="-2" y2="-0.05" width="0.1524" layer="21"/>
+<wire x1="2" y1="0.1" x2="2" y2="-0.05" width="0.1524" layer="21"/>
+<wire x1="1.1" y1="1.4" x2="1.35" y2="1.4" width="0.1524" layer="21"/>
+<wire x1="-1.1" y1="1.4" x2="-1.35" y2="1.4" width="0.1524" layer="21"/>
+<wire x1="-1.35" y1="-1.4" x2="1.35" y2="-1.4" width="0.1524" layer="21"/>
+<text x="-1.9812" y="2.1812" size="0.6096" layer="25" font="vector" ratio="25">&gt;NAME</text>
+<text x="-2.0574" y="-2.286" size="0.6096" layer="27" font="vector" ratio="25">&gt;VALUE</text>
+<wire x1="2.75" y1="1.95" x2="-2.75" y2="1.95" width="0" layer="39"/>
+<wire x1="-2.75" y1="1.95" x2="-2.75" y2="-1.5" width="0" layer="39"/>
+<wire x1="-2.75" y1="-1.5" x2="2.75" y2="-1.5" width="0" layer="39"/>
+<wire x1="2.75" y1="-1.5" x2="2.75" y2="1.95" width="0" layer="39"/>
+</package>
+<package name="LED-0603">
+<wire x1="0.46" y1="0.17" x2="0" y2="0.17" width="0.2032" layer="21"/>
+<wire x1="-0.46" y1="0.17" x2="0" y2="0.17" width="0.2032" layer="21"/>
+<wire x1="0" y1="0.17" x2="0.2338" y2="-0.14" width="0.2032" layer="21"/>
+<wire x1="-0.0254" y1="0.1546" x2="-0.2184" y2="-0.14" width="0.2032" layer="21"/>
+<smd name="C" x="0" y="0.75" dx="0.8" dy="0.8" layer="1"/>
+<smd name="A" x="0" y="-0.75" dx="0.8" dy="0.8" layer="1"/>
+<text x="-0.6985" y="-0.889" size="0.6096" layer="25" font="vector" ratio="25" rot="R90">&gt;NAME</text>
+<text x="1.3335" y="-1.016" size="0.6096" layer="27" font="vector" ratio="25" rot="R90">&gt;VALUE</text>
+<wire x1="0.4" y1="0.775" x2="0.4" y2="-0.775" width="0.05" layer="51"/>
+<wire x1="-0.4" y1="-0.775" x2="-0.4" y2="0.775" width="0.05" layer="51"/>
+<polygon width="0" layer="51">
+<vertex x="-0.35" y="0.8"/>
+<vertex x="-0.35" y="0.35"/>
+<vertex x="-0.15" y="0.35"/>
+<vertex x="-0.15" y="0.075"/>
+<vertex x="0.15" y="0.075"/>
+<vertex x="0.15" y="0.35"/>
+<vertex x="0.35" y="0.35"/>
+<vertex x="0.35" y="0.8"/>
+<vertex x="0.15" y="0.8" curve="-133.603683"/>
+<vertex x="-0.15" y="0.8"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="-0.35" y="-0.8"/>
+<vertex x="-0.35" y="-0.4"/>
+<vertex x="0.35" y="-0.4"/>
+<vertex x="0.35" y="-0.8"/>
+<vertex x="0.15" y="-0.8" curve="133.603683"/>
+<vertex x="-0.15" y="-0.8"/>
+</polygon>
+<wire x1="-0.4" y1="0.775" x2="-0.175" y2="0.775" width="0.05" layer="51"/>
+<wire x1="0.4" y1="0.775" x2="0.175" y2="0.775" width="0.05" layer="51"/>
+<wire x1="-0.4" y1="-0.775" x2="-0.175" y2="-0.775" width="0.05" layer="51"/>
+<wire x1="0.4" y1="-0.775" x2="0.175" y2="-0.775" width="0.05" layer="51"/>
+<wire x1="0.6096" y1="1.3462" x2="0.6096" y2="-1.3462" width="0" layer="39" curve="-1.472223"/>
+<wire x1="0.6096" y1="-1.3462" x2="-0.6096" y2="-1.3462" width="0" layer="39"/>
+<wire x1="-0.6096" y1="-1.3462" x2="-0.6096" y2="1.3462" width="0" layer="39"/>
+<wire x1="-0.6096" y1="1.3462" x2="0.6096" y2="1.3462" width="0" layer="39"/>
 </package>
 </packages>
 </library>
@@ -1755,108 +1798,174 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="SOM1" library="biomimetic" package="TORPEDO_DM3730" value="TORPEDO_DM3730" x="15.24" y="11.5824" locked="yes" rot="R180"/>
-<element name="CAM1" library="biomimetic" package="AXK7L28227G" value="LI-VM01CM" x="33.909" y="11.5824" locked="yes" rot="R270"/>
+<element name="CAM1" library="biomimetic" package="AXK7L28227G" value="LI-VM01CM" x="33.909" y="11.5824" locked="yes" smashed="yes" rot="R270">
+<attribute name="NAME" x="30.5562" y="7.5438" size="0.6096" layer="25" font="vector" ratio="25" rot="R90"/>
+<attribute name="VALUE" x="30.5562" y="10.8204" size="0.6096" layer="27" font="vector" ratio="25" rot="R90"/>
+</element>
 <element name="C1" library="biomimetic" package="0402-CAP" value="0.1uF" x="36.4998" y="14.4018" locked="yes" smashed="yes" rot="MR270">
-<attribute name="NAME" x="35.8902" y="16.1544" size="0.6096" layer="26" font="vector" ratio="25" rot="MR180"/>
-<attribute name="VALUE" x="37.7952" y="15.4051" size="0.6096" layer="28" font="vector" ratio="25" rot="MR270"/>
+<attribute name="NAME" x="36.4998" y="16.2306" size="0.6096" layer="26" font="vector" ratio="25" rot="MR180" align="bottom-center"/>
 </element>
 <element name="C3" library="biomimetic" package="0402-CAP" value="0.1uF" x="35.052" y="17.9832" locked="yes" smashed="yes" rot="MR90">
 <attribute name="DESIGN_NAME" value="OMAPProc" x="35.052" y="17.9832" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="AUTHOR" value="Ryan Julian (ryanjulian@berkeley.edu)" x="35.052" y="17.9832" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="REVISION" value="B" x="35.052" y="17.9832" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="YEAR" value="2012" x="35.052" y="17.9832" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="35.5092" y="19.2024" size="0.6096" layer="26" font="vector" ratio="25" rot="MR0"/>
-<attribute name="VALUE" x="33.7566" y="16.9799" size="0.6096" layer="28" font="vector" ratio="25" rot="MR90"/>
+<attribute name="NAME" x="35.052" y="19.2024" size="0.6096" layer="26" font="vector" ratio="25" rot="MR0" align="bottom-center"/>
 </element>
-<element name="R1" library="biomimetic" package="0402-RES" value="1.5k" x="40.9956" y="20.574" locked="yes" rot="MR270"/>
-<element name="R2" library="biomimetic" package="0402-RES" value="1.5k" x="39.4716" y="20.574" locked="yes" rot="MR270"/>
-<element name="JP2" library="biomimetic" package="MOLEX_503480-0600" value="ImageProc" x="9.6012" y="2.5908" locked="yes" rot="MR0"/>
+<element name="R1" library="biomimetic" package="0402-RES" value="1.5k" x="40.9956" y="20.574" locked="yes" smashed="yes" rot="MR270">
+<attribute name="NAME" x="40.9956" y="22.4028" size="0.6096" layer="26" font="vector" ratio="24" rot="MR180" align="bottom-center"/>
+</element>
+<element name="R2" library="biomimetic" package="0402-RES" value="1.5k" x="39.4716" y="20.574" locked="yes" smashed="yes" rot="MR270">
+<attribute name="NAME" x="39.4716" y="22.4028" size="0.6096" layer="26" font="vector" ratio="24" rot="MR180" align="bottom-center"/>
+</element>
+<element name="JP2" library="biomimetic" package="MOLEX_503480-0600" value="IMAGEPROC" x="9.6012" y="2.5908" locked="yes" smashed="yes" rot="MR0">
+<attribute name="NAME" x="12.0396" y="6.096" size="0.6096" layer="26" font="vector" ratio="25" rot="MR0"/>
+<attribute name="VALUE" x="9.6012" y="5.2578" size="0.6096" layer="28" font="vector" ratio="25" rot="MR0" align="bottom-center"/>
+</element>
 <element name="C5" library="biomimetic" package="0402-CAP" value="1uF" x="36.4998" y="12.192" locked="yes" smashed="yes" rot="MR90">
 <attribute name="DESIGN_NAME" value="OMAPProc" x="36.4998" y="12.192" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="AUTHOR" value="Ryan Julian (ryanjulian@berkeley.edu)" x="36.4998" y="12.192" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="REVISION" value="B" x="36.4998" y="12.192" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="YEAR" value="2012" x="36.4998" y="12.192" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="35.8902" y="10.9728" size="0.6096" layer="26" font="vector" ratio="25" rot="MR180"/>
-<attribute name="VALUE" x="35.2044" y="11.1887" size="0.6096" layer="28" font="vector" ratio="25" rot="MR90"/>
+<attribute name="NAME" x="36.4998" y="10.9728" size="0.6096" layer="26" font="vector" ratio="25" rot="MR180" align="bottom-center"/>
 </element>
 <element name="C6" library="biomimetic" package="0402-CAP" value="1uF" x="36.4998" y="17.9832" locked="yes" smashed="yes" rot="MR90">
 <attribute name="DESIGN_NAME" value="OMAPProc" x="36.4998" y="17.9832" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="AUTHOR" value="Ryan Julian (ryanjulian@berkeley.edu)" x="36.4998" y="17.9832" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="REVISION" value="B" x="36.4998" y="17.9832" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="YEAR" value="2012" x="36.4998" y="17.9832" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="36.957" y="19.2024" size="0.6096" layer="26" font="vector" ratio="25" rot="MR0"/>
-<attribute name="VALUE" x="35.2044" y="16.9799" size="0.6096" layer="28" font="vector" ratio="25" rot="MR90"/>
+<attribute name="NAME" x="36.4998" y="19.2024" size="0.6096" layer="26" font="vector" ratio="25" rot="MR0" align="bottom-center"/>
 </element>
-<element name="IC1" library="biomimetic" package="MLF-6" value="MIC5335-SPYMT" x="4.4958" y="13.1064" locked="yes" rot="MR90"/>
-<element name="SDCARD1" library="biomimetic" package="AVX_045138008010890+" value="MICROSD" x="23.8506" y="14.478" locked="yes" rot="MR0"/>
-<element name="R3" library="biomimetic" package="0402-RES" value="10k" x="23.0886" y="3.81" locked="yes" rot="MR270"/>
-<element name="R4" library="biomimetic" package="0402-RES" value="10k" x="21.5646" y="3.81" locked="yes" rot="MR270"/>
-<element name="R5" library="biomimetic" package="0402-RES" value="10k" x="20.0406" y="3.81" locked="yes" rot="MR270"/>
-<element name="R6" library="biomimetic" package="0402-RES" value="10k" x="26.1366" y="3.81" locked="yes" rot="MR270"/>
-<element name="R7" library="biomimetic" package="0402-RES" value="10k" x="24.6126" y="3.81" locked="yes" rot="MR270"/>
-<element name="C7" library="biomimetic" package="0603-CAP" value="22uF" x="14.7066" y="17.4498" locked="yes" rot="MR90"/>
-<element name="C8" library="biomimetic" package="0402-CAP" value="0.1uF" x="21.5646" y="1.6002" locked="yes" rot="MR270"/>
-<element name="JP1" library="biomimetic" package="MOLEX_503480-0600" value="Console" x="33.3756" y="20.4978" rot="R180">
-<attribute name="DESIGN_NAME" value="OMAPProc" x="33.3756" y="20.4978" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="AUTHOR" value="Ryan Julian (ryanjulian@berkeley.edu)" x="33.3756" y="20.4978" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="REVISION" value="B" x="33.3756" y="20.4978" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="YEAR" value="2012" x="33.3756" y="20.4978" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="IC1" library="biomimetic" package="MLF-6" value="MIC5335-SPYMT" x="4.4958" y="13.1064" locked="yes" smashed="yes" rot="MR90">
+<attribute name="NAME" x="5.6388" y="11.43" size="0.6096" layer="26" font="vector" ratio="25" rot="MR0"/>
 </element>
-<element name="R8" library="biomimetic" package="0402-RES" value="DNP" x="14.7066" y="14.6304" locked="yes" rot="MR90">
+<element name="SDCARD1" library="biomimetic" package="AVX_045138008010890+" value="MICROSD" x="23.8506" y="14.478" locked="yes" smashed="yes" rot="MR0">
+<attribute name="NAME" x="33.7566" y="6.1722" size="0.6096" layer="26" font="vector" ratio="25" rot="MR0" align="top-left"/>
+<attribute name="VALUE" x="33.7566" y="4.7244" size="0.6096" layer="28" font="vector" ratio="25" rot="MR0"/>
+</element>
+<element name="R3" library="biomimetic" package="0402-RES" value="10k" x="23.0886" y="3.81" locked="yes" smashed="yes" rot="MR270">
+<attribute name="NAME" x="30.9372" y="3.81" size="0.6096" layer="26" font="vector" ratio="24" rot="MR0" align="center-left"/>
+</element>
+<element name="R4" library="biomimetic" package="0402-RES" value="10k" x="21.5646" y="3.81" locked="yes" smashed="yes" rot="MR270">
+<attribute name="NAME" x="29.5656" y="3.81" size="0.6096" layer="26" font="vector" ratio="24" rot="MR0" align="center-left"/>
+</element>
+<element name="R5" library="biomimetic" package="0402-RES" value="10k" x="20.0406" y="3.81" locked="yes" smashed="yes" rot="MR270">
+<attribute name="NAME" x="28.194" y="3.81" size="0.6096" layer="26" font="vector" ratio="24" rot="MR0" align="center-left"/>
+</element>
+<element name="R6" library="biomimetic" package="0402-RES" value="10k" x="26.1366" y="3.81" locked="yes" smashed="yes" rot="MR270">
+<attribute name="NAME" x="33.6804" y="3.81" size="0.6096" layer="26" font="vector" ratio="24" rot="MR0" align="center-left"/>
+</element>
+<element name="R7" library="biomimetic" package="0402-RES" value="10k" x="24.6126" y="3.81" locked="yes" smashed="yes" rot="MR270">
+<attribute name="NAME" x="32.3088" y="3.81" size="0.6096" layer="26" font="vector" ratio="24" rot="MR0" align="center-left"/>
+</element>
+<element name="C7" library="biomimetic" package="0603-CAP" value="22uF" x="14.7066" y="17.4498" locked="yes" smashed="yes" rot="MR90">
+<attribute name="NAME" x="14.7066" y="19.1262" size="0.6096" layer="26" font="vector" ratio="25" rot="MR0" align="bottom-center"/>
+</element>
+<element name="C8" library="biomimetic" package="0402-CAP" value="0.1uF" x="21.5646" y="1.6002" locked="yes" smashed="yes" rot="MR270">
+<attribute name="NAME" x="22.4028" y="2.1336" size="0.6096" layer="26" font="vector" ratio="25" rot="MR180" align="center-left"/>
+</element>
+<element name="JP1" library="biomimetic" package="MOLEX_503480-0600" value="CONSOLE" x="33.909" y="20.6502" locked="yes" smashed="yes" rot="R180">
+<attribute name="DESIGN_NAME" value="OMAPProc" x="33.909" y="20.6502" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="AUTHOR" value="Ryan Julian (ryanjulian@berkeley.edu)" x="33.909" y="20.6502" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="REVISION" value="B" x="33.909" y="20.6502" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="YEAR" value="2012" x="33.909" y="20.6502" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="31.242" y="19.3548" size="0.6096" layer="25" font="vector" ratio="25" rot="R180"/>
+<attribute name="VALUE" x="33.909" y="17.8308" size="0.6096" layer="27" font="vector" ratio="25" rot="R180" align="bottom-center"/>
+</element>
+<element name="R8" library="biomimetic" package="0402-RES" value="DNP" x="14.7066" y="14.6304" locked="yes" smashed="yes" rot="MR90">
 <attribute name="DESIGN_NAME" value="OMAPProc" x="14.7066" y="14.6304" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="AUTHOR" value="Ryan Julian (ryanjulian@berkeley.edu)" x="14.7066" y="14.6304" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="REVISION" value="B" x="14.7066" y="14.6304" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="YEAR" value="2012" x="14.7066" y="14.6304" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="14.7066" y="12.8016" size="0.6096" layer="26" font="vector" ratio="24" rot="MR0" align="bottom-center"/>
 </element>
-<element name="C12" library="biomimetic" package="0402-CAP" value="1uF" x="1.9812" y="13.1064" locked="yes" rot="MR90"/>
+<element name="C12" library="biomimetic" package="0402-CAP" value="1uF" x="1.9812" y="13.1064" locked="yes" smashed="yes" rot="MR90">
+<attribute name="NAME" x="1.9812" y="14.3256" size="0.6096" layer="26" font="vector" ratio="25" rot="MR0" align="bottom-center"/>
+</element>
 <element name="C13" library="biomimetic" package="0402-CAP" value="1uF" x="8.5344" y="13.1064" locked="yes" smashed="yes" rot="MR90">
-<attribute name="NAME" x="7.874" y="14.9987" size="0.6096" layer="26" font="vector" ratio="25" rot="MR180"/>
-<attribute name="VALUE" x="7.239" y="12.1031" size="0.6096" layer="28" font="vector" ratio="25" rot="MR90"/>
+<attribute name="NAME" x="9.525" y="14.3256" size="0.6096" layer="26" font="vector" ratio="25" rot="MR0"/>
 </element>
-<element name="C14" library="biomimetic" package="0402-CAP" value="1uF" x="7.0104" y="13.1064" locked="yes" rot="MR90"/>
-<element name="C9" library="biomimetic" package="0402-CAP" value="1uF" x="1.9812" y="16.3068" locked="yes" rot="MR90"/>
-<element name="C10" library="biomimetic" package="0402-CAP" value="1uF" x="8.5344" y="16.3068" locked="yes" rot="MR90"/>
-<element name="C11" library="biomimetic" package="0402-CAP" value="1uF" x="7.0104" y="16.3068" locked="yes" rot="MR90"/>
-<element name="IC2" library="biomimetic" package="MLF-6" value="MIC5335-MGYMT" x="4.4958" y="16.3068" locked="yes" rot="MR90"/>
-<element name="IC3" library="biomimetic" package="R-PVQFN-N20" value="TXS0108ERGY" x="3.9594" y="6.244" locked="yes" rot="MR90"/>
-<element name="C15" library="biomimetic" package="0402-CAP" value="0.1uF" x="3.2004" y="10.3632" locked="yes" rot="MR90">
+<element name="C14" library="biomimetic" package="0402-CAP" value="1uF" x="7.0104" y="13.1064" locked="yes" smashed="yes" rot="MR90">
+<attribute name="NAME" x="7.62" y="14.3256" size="0.6096" layer="26" font="vector" ratio="25" rot="MR0"/>
+</element>
+<element name="C9" library="biomimetic" package="0402-CAP" value="1uF" x="1.9812" y="16.3068" locked="yes" smashed="yes" rot="MR90">
+<attribute name="NAME" x="1.9812" y="17.526" size="0.6096" layer="26" font="vector" ratio="25" rot="MR0" align="bottom-center"/>
+</element>
+<element name="C10" library="biomimetic" package="0402-CAP" value="1uF" x="8.5344" y="16.3068" locked="yes" smashed="yes" rot="MR90">
+<attribute name="NAME" x="9.525" y="17.526" size="0.6096" layer="26" font="vector" ratio="25" rot="MR0"/>
+</element>
+<element name="C11" library="biomimetic" package="0402-CAP" value="1uF" x="7.0104" y="16.3068" locked="yes" smashed="yes" rot="MR90">
+<attribute name="NAME" x="7.62" y="17.526" size="0.6096" layer="26" font="vector" ratio="25" rot="MR0"/>
+</element>
+<element name="IC2" library="biomimetic" package="MLF-6" value="MIC5335-MGYMT" x="4.4958" y="16.3068" locked="yes" smashed="yes" rot="MR90">
+<attribute name="NAME" x="5.6388" y="14.6304" size="0.6096" layer="26" font="vector" ratio="25" rot="MR0"/>
+</element>
+<element name="IC3" library="biomimetic" package="R-PVQFN-N20" value="TXS0108ERGY" x="3.9594" y="6.244" locked="yes" smashed="yes" rot="MR90">
+<attribute name="NAME" x="8.0194" y="8.2596" size="0.6096" layer="26" font="vector" ratio="25" rot="MR0" align="top-left"/>
+</element>
+<element name="C15" library="biomimetic" package="0402-CAP" value="0.1uF" x="3.2004" y="10.3632" locked="yes" smashed="yes" rot="MR90">
 <attribute name="DESIGN_NAME" value="OMAPProc" x="3.2004" y="10.3632" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="AUTHOR" value="Ryan Julian (ryanjulian@berkeley.edu)" x="3.2004" y="10.3632" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="REVISION" value="B" x="3.2004" y="10.3632" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="YEAR" value="2012" x="3.2004" y="10.3632" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="5.6388" y="9.3726" size="0.6096" layer="26" font="vector" ratio="25" rot="MR0"/>
 </element>
-<element name="C16" library="biomimetic" package="0402-CAP" value="0.1uF" x="5.1816" y="2.286" locked="yes" rot="MR270">
+<element name="C16" library="biomimetic" package="0402-CAP" value="0.1uF" x="5.1816" y="2.286" locked="yes" smashed="yes" rot="MR270">
 <attribute name="DESIGN_NAME" value="OMAPProc" x="5.1816" y="2.286" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="AUTHOR" value="Ryan Julian (ryanjulian@berkeley.edu)" x="5.1816" y="2.286" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="REVISION" value="B" x="5.1816" y="2.286" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="YEAR" value="2012" x="5.1816" y="2.286" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NAME" x="5.1816" y="0.4572" size="0.6096" layer="26" font="vector" ratio="25" rot="MR0" align="bottom-center"/>
 </element>
-<element name="C17" library="biomimetic" package="0402-CAP" value="0.1uF" x="38.1762" y="5.715" locked="yes" rot="MR270">
+<element name="C17" library="biomimetic" package="0402-CAP" value="0.1uF" x="38.1762" y="5.715" locked="yes" smashed="yes" rot="MR270">
 <attribute name="DESIGN_NAME" value="OMAPProc" x="38.1762" y="5.715" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="AUTHOR" value="Ryan Julian (ryanjulian@berkeley.edu)" x="38.1762" y="5.715" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="REVISION" value="B" x="38.1762" y="5.715" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="YEAR" value="2012" x="38.1762" y="5.715" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NAME" x="38.1762" y="4.4958" size="0.6096" layer="26" font="vector" ratio="25" rot="MR180" align="bottom-center"/>
 </element>
-<element name="CAM2" library="biomimetic" package="XF2W-2415-1A" value="ECAM50_5642_MOD" x="41.3004" y="11.5824" locked="yes" rot="MR270"/>
-<element name="C20" library="biomimetic" package="0603-CAP" value="" x="13.716" y="5.5626" locked="yes" rot="MR90"/>
-<element name="S1" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SW_RESET" x="1.6002" y="-2.9718" rot="R180"/>
-<element name="S2" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SW_PWRON" x="1.6002" y="29.8704" rot="R180">
-<attribute name="DESIGN_NAME" value="OMAPProc" x="1.6002" y="29.8704" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="AUTHOR" value="Ryan Julian (ryanjulian@berkeley.edu)" x="1.6002" y="29.8704" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="REVISION" value="B" x="1.6002" y="29.8704" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="YEAR" value="2012" x="1.6002" y="29.8704" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="CAM2" library="biomimetic" package="XF2W-2415-1A" value="ECAM50_5642_MOD" x="41.3004" y="11.5824" locked="yes" smashed="yes" rot="MR270">
+<attribute name="NAME" x="43.8912" y="4.572" size="0.6096" layer="26" font="vector" ratio="25" rot="SMR90" align="top-left"/>
+<attribute name="VALUE" x="43.2816" y="10.287" size="0.6096" layer="28" font="vector" ratio="25" rot="SMR90"/>
 </element>
-<element name="C21" library="biomimetic" package="0402-CAP" value="0.1uF" x="-13.3256" y="-8.1628" rot="MR90">
-<attribute name="DESIGN_NAME" value="OMAPProc" x="-13.3256" y="-8.1628" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="AUTHOR" value="Ryan Julian (ryanjulian@berkeley.edu)" x="-13.3256" y="-8.1628" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="REVISION" value="B" x="-13.3256" y="-8.1628" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="YEAR" value="2012" x="-13.3256" y="-8.1628" size="1.778" layer="28" rot="MR90" display="off"/>
+<element name="C20" library="biomimetic" package="0603-CAP" value="22uF" x="13.716" y="5.5626" locked="yes" smashed="yes" rot="MR90">
+<attribute name="NAME" x="13.716" y="7.239" size="0.6096" layer="26" font="vector" ratio="25" rot="MR0" align="bottom-center"/>
 </element>
-<element name="C22" library="biomimetic" package="0402-CAP" value="0.1uF" x="-15.7556" y="26.098" rot="MR0">
-<attribute name="DESIGN_NAME" value="OMAPProc" x="-15.7556" y="26.098" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="AUTHOR" value="Ryan Julian (ryanjulian@berkeley.edu)" x="-15.7556" y="26.098" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="REVISION" value="B" x="-15.7556" y="26.098" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="YEAR" value="2012" x="-15.7556" y="26.098" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="C21" library="biomimetic" package="0402-CAP" value="0.1uF" x="13.8684" y="21.0312" locked="yes" smashed="yes" rot="MR270">
+<attribute name="DESIGN_NAME" value="OMAPProc" x="13.8684" y="21.0312" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="AUTHOR" value="Ryan Julian (ryanjulian@berkeley.edu)" x="13.8684" y="21.0312" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="REVISION" value="B" x="13.8684" y="21.0312" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="YEAR" value="2012" x="13.8684" y="21.0312" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NAME" x="13.8684" y="22.1742" size="0.6096" layer="26" font="vector" ratio="25" rot="MR0" align="bottom-center"/>
+</element>
+<element name="C22" library="biomimetic" package="0402-CAP" value="0.1uF" x="33.528" y="21.0312" locked="yes" smashed="yes" rot="MR90">
+<attribute name="DESIGN_NAME" value="OMAPProc" x="33.528" y="21.0312" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="AUTHOR" value="Ryan Julian (ryanjulian@berkeley.edu)" x="33.528" y="21.0312" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="REVISION" value="B" x="33.528" y="21.0312" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="YEAR" value="2012" x="33.528" y="21.0312" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="33.528" y="22.2504" size="0.6096" layer="26" font="vector" ratio="25" rot="MR0" align="bottom-center"/>
+</element>
+<element name="SW2" library="biomimetic" package="KMR421G" value="RESET" x="16.1544" y="21.0312" locked="yes" smashed="yes">
+<attribute name="NAME" x="13.2588" y="21.7932" size="0.6096" layer="25" font="vector" ratio="25" align="bottom-right"/>
+<attribute name="VALUE" x="13.2588" y="20.7264" size="0.6096" layer="27" font="vector" ratio="25" align="bottom-right"/>
+</element>
+<element name="SW1" library="biomimetic" package="KMR421G" value="PWRON" x="25.0698" y="21.0312" locked="yes" smashed="yes">
+<attribute name="NAME" x="22.1742" y="21.8694" size="0.6096" layer="25" font="vector" ratio="25" align="bottom-right"/>
+<attribute name="VALUE" x="22.1742" y="20.7264" size="0.6096" layer="27" font="vector" ratio="25" align="bottom-right"/>
+</element>
+<element name="LED1" library="biomimetic" package="LED-0603" value="USER" x="30.7848" y="4.8006" locked="yes" smashed="yes" rot="R180">
+<attribute name="NAME" x="31.5468" y="5.4102" size="0.6096" layer="25" font="vector" ratio="25"/>
+<attribute name="VALUE" x="31.5468" y="4.8006" size="0.6096" layer="27" font="vector" ratio="25" align="center-left"/>
+</element>
+<element name="C2" library="biomimetic" package="0402-CAP" value="0.1uF" x="8.5344" y="21.0312" locked="yes" smashed="yes" rot="MR90">
+<attribute name="NAME" x="8.5344" y="22.1742" size="0.6096" layer="26" font="vector" ratio="25" rot="MR0" align="bottom-center"/>
+</element>
+<element name="SW3" library="biomimetic" package="KMR421G" value="USER" x="7.3152" y="21.0312" locked="yes" smashed="yes">
+<attribute name="NAME" x="4.4196" y="21.7932" size="0.6096" layer="25" font="vector" ratio="25" align="bottom-right"/>
+<attribute name="VALUE" x="4.4196" y="20.7264" size="0.6096" layer="27" font="vector" ratio="25" align="bottom-right"/>
+</element>
+<element name="R9" library="biomimetic" package="0402-RES" value="330" x="30.7848" y="1.524" locked="yes" smashed="yes" rot="MR270">
+<attribute name="NAME" x="30.7848" y="2.667" size="0.6096" layer="26" font="vector" ratio="24" rot="MR0" align="bottom-center"/>
 </element>
 </elements>
 <signals>
@@ -1874,18 +1983,21 @@ design rules under a new name.</description>
 <via x="32.9184" y="13.1064" extent="1-16" drill="0.381"/>
 <wire x1="31.409" y1="12.9824" x2="32.7944" y2="12.9824" width="0.1524" layer="1"/>
 <wire x1="32.7944" y1="12.9824" x2="32.9184" y2="13.1064" width="0.1524" layer="1"/>
-<wire x1="32.9184" y1="13.1064" x2="35.7378" y2="15.9258" width="0.1524" layer="2"/>
-<wire x1="35.7378" y1="15.9258" x2="35.7378" y2="17.2974" width="0.1524" layer="2"/>
+<wire x1="32.9184" y1="13.1064" x2="34.5186" y2="14.7066" width="0.1524" layer="2"/>
+<wire x1="34.5186" y1="14.7066" x2="37.1094" y2="17.2974" width="0.1524" layer="2"/>
 <via x="7.239" y="10.7442" extent="1-16" drill="0.381"/>
 <wire x1="7.04" y1="7.4624" x2="7.04" y2="8.6402" width="0.1524" layer="1"/>
 <wire x1="7.04" y1="8.6402" x2="7.239" y2="8.8392" width="0.1524" layer="1"/>
 <wire x1="7.239" y1="8.8392" x2="7.239" y2="10.7442" width="0.1524" layer="1"/>
-<wire x1="7.239" y1="10.7442" x2="13.7922" y2="17.2974" width="0.1524" layer="2"/>
-<wire x1="13.7922" y1="17.2974" x2="35.7378" y2="17.2974" width="0.1524" layer="2"/>
-<wire x1="35.7378" y1="17.2974" x2="42.4434" y2="17.2974" width="0.1524" layer="2"/>
+<wire x1="7.239" y1="10.7442" x2="8.4582" y2="11.9634" width="0.1524" layer="2"/>
+<wire x1="8.4582" y1="11.9634" x2="13.6398" y2="11.9634" width="0.1524" layer="2"/>
+<wire x1="13.6398" y1="11.9634" x2="17.145" y2="15.4686" width="0.1524" layer="2"/>
+<wire x1="17.145" y1="15.4686" x2="33.7566" y2="15.4686" width="0.1524" layer="2"/>
+<wire x1="37.1094" y1="17.2974" x2="42.4434" y2="17.2974" width="0.1524" layer="2"/>
 <wire x1="39.4716" y1="20.0914" x2="39.4716" y2="19.5834" width="0.1524" layer="16"/>
 <wire x1="39.4716" y1="19.5834" x2="41.7576" y2="17.2974" width="0.1524" layer="16"/>
 <wire x1="41.7576" y1="17.2974" x2="42.4434" y2="17.2974" width="0.1524" layer="16"/>
+<wire x1="33.7566" y1="15.4686" x2="34.5186" y2="14.7066" width="0.1524" layer="2"/>
 </signal>
 <signal name="CAM_SCLK">
 <contactref element="CAM1" pad="19"/>
@@ -1896,11 +2008,11 @@ design rules under a new name.</description>
 <wire x1="39.6754" y1="15.3324" x2="40.4022" y2="15.3324" width="0.1524" layer="16"/>
 <wire x1="40.4022" y1="15.3324" x2="40.9956" y2="15.9258" width="0.1524" layer="16"/>
 <wire x1="40.9956" y1="15.9258" x2="42.4434" y2="15.9258" width="0.1524" layer="16"/>
-<via x="29.4894" y="12.3444" extent="1-16" drill="0.381"/>
-<wire x1="31.409" y1="12.5824" x2="29.7274" y2="12.5824" width="0.1524" layer="1"/>
-<wire x1="29.7274" y1="12.5824" x2="29.4894" y2="12.3444" width="0.1524" layer="1"/>
-<wire x1="29.4894" y1="12.3444" x2="29.6418" y2="12.192" width="0.1524" layer="2"/>
-<wire x1="29.6418" y1="12.192" x2="32.9184" y2="12.192" width="0.1524" layer="2"/>
+<via x="29.1084" y="12.3444" extent="1-16" drill="0.381"/>
+<wire x1="31.409" y1="12.5824" x2="29.3464" y2="12.5824" width="0.1524" layer="1"/>
+<wire x1="29.3464" y1="12.5824" x2="29.1084" y2="12.3444" width="0.1524" layer="1"/>
+<wire x1="29.1084" y1="12.3444" x2="29.2608" y2="12.192" width="0.1524" layer="2"/>
+<wire x1="29.2608" y1="12.192" x2="32.9184" y2="12.192" width="0.1524" layer="2"/>
 <wire x1="32.9184" y1="12.192" x2="33.9852" y2="13.2588" width="0.1524" layer="2"/>
 <wire x1="33.9852" y1="13.2588" x2="35.5092" y2="13.2588" width="0.1524" layer="2"/>
 <wire x1="35.5092" y1="13.2588" x2="36.8808" y2="14.6304" width="0.1524" layer="2"/>
@@ -1912,7 +2024,7 @@ design rules under a new name.</description>
 <wire x1="6.64" y1="9.0572" x2="6.477" y2="9.2202" width="0.1524" layer="1"/>
 <wire x1="6.477" y1="9.2202" x2="6.477" y2="11.3538" width="0.1524" layer="3"/>
 <wire x1="6.477" y1="11.3538" x2="7.4676" y2="12.3444" width="0.1524" layer="3"/>
-<wire x1="7.4676" y1="12.3444" x2="29.4894" y2="12.3444" width="0.1524" layer="3"/>
+<wire x1="7.4676" y1="12.3444" x2="29.1084" y2="12.3444" width="0.1524" layer="3"/>
 <wire x1="40.9956" y1="20.0914" x2="40.9956" y2="19.7358" width="0.1524" layer="16"/>
 <wire x1="40.9956" y1="19.7358" x2="41.148" y2="19.5834" width="0.1524" layer="16"/>
 <wire x1="41.148" y1="19.5834" x2="42.9768" y2="19.5834" width="0.1524" layer="16"/>
@@ -1920,13 +2032,6 @@ design rules under a new name.</description>
 <wire x1="43.2816" y1="19.2786" x2="43.2816" y2="16.6878" width="0.1524" layer="16"/>
 <wire x1="43.2816" y1="16.6878" x2="42.5196" y2="15.9258" width="0.1524" layer="16"/>
 <wire x1="42.5196" y1="15.9258" x2="42.4434" y2="15.9258" width="0.1524" layer="16"/>
-</signal>
-<signal name="V+">
-<contactref element="SOM1" pad="J1.24"/>
-<contactref element="SOM1" pad="J2.7"/>
-<contactref element="SOM1" pad="J2.4"/>
-<wire x1="23.84" y1="7.4624" x2="20.64" y2="15.7024" width="0" layer="19" extent="1-1"/>
-<wire x1="24.64" y1="4.5224" x2="23.84" y2="7.4624" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CAM_D0">
 <contactref element="CAM1" pad="1"/>
@@ -2222,10 +2327,8 @@ design rules under a new name.</description>
 <wire x1="12.64" y1="7.4624" x2="12.64" y2="8.3728" width="0.1524" layer="1"/>
 <wire x1="12.64" y1="8.3728" x2="12.954" y2="8.6868" width="0.1524" layer="1"/>
 <wire x1="12.954" y1="8.6868" x2="12.954" y2="10.7442" width="0.1524" layer="1"/>
-<wire x1="12.954" y1="10.7442" x2="16.8402" y2="14.6304" width="0.1524" layer="2"/>
-<wire x1="16.8402" y1="14.6304" x2="21.1074" y2="14.6304" width="0.1524" layer="2"/>
-<wire x1="21.1074" y1="14.6304" x2="21.4884" y2="15.0114" width="0.1524" layer="2"/>
-<wire x1="21.4884" y1="15.0114" x2="22.6314" y2="15.0114" width="0.1524" layer="2"/>
+<wire x1="12.954" y1="10.7442" x2="17.2212" y2="15.0114" width="0.1524" layer="2"/>
+<wire x1="17.2212" y1="15.0114" x2="22.6314" y2="15.0114" width="0.1524" layer="2"/>
 <wire x1="22.6314" y1="15.0114" x2="23.0124" y2="14.6304" width="0.1524" layer="2"/>
 <wire x1="23.0124" y1="14.6304" x2="32.9184" y2="14.6304" width="0.1524" layer="2"/>
 </signal>
@@ -2250,11 +2353,9 @@ design rules under a new name.</description>
 <wire x1="11.04" y1="8.8482" x2="10.668" y2="9.2202" width="0.1524" layer="1"/>
 <wire x1="27.2796" y1="13.8684" x2="23.1648" y2="13.8684" width="0.1524" layer="2"/>
 <wire x1="23.1648" y1="13.8684" x2="22.4028" y2="14.6304" width="0.1524" layer="2"/>
-<wire x1="22.4028" y1="14.6304" x2="21.6408" y2="14.6304" width="0.1524" layer="2"/>
-<wire x1="21.6408" y1="14.6304" x2="20.8788" y2="13.8684" width="0.1524" layer="2"/>
-<wire x1="20.8788" y1="13.8684" x2="16.5354" y2="13.8684" width="0.1524" layer="2"/>
-<wire x1="16.5354" y1="13.8684" x2="13.6398" y2="10.9728" width="0.1524" layer="2"/>
-<wire x1="13.6398" y1="10.9728" x2="13.6398" y2="10.5156" width="0.1524" layer="2"/>
+<wire x1="22.4028" y1="14.6304" x2="17.3736" y2="14.6304" width="0.1524" layer="2"/>
+<wire x1="17.3736" y1="14.6304" x2="13.6398" y2="10.8966" width="0.1524" layer="2"/>
+<wire x1="13.6398" y1="10.8966" x2="13.6398" y2="10.5156" width="0.1524" layer="2"/>
 <wire x1="13.6398" y1="10.5156" x2="13.1064" y2="9.9822" width="0.1524" layer="2"/>
 <wire x1="13.1064" y1="9.9822" x2="11.43" y2="9.9822" width="0.1524" layer="2"/>
 <wire x1="11.43" y1="9.9822" x2="10.668" y2="9.2202" width="0.1524" layer="2"/>
@@ -2312,8 +2413,6 @@ design rules under a new name.</description>
 <contactref element="SOM1" pad="J2.99"/>
 <contactref element="SOM1" pad="J1.12"/>
 <contactref element="C20" pad="2"/>
-<contactref element="C21" pad="2"/>
-<contactref element="C22" pad="2"/>
 <polygon width="0.1524" layer="1">
 <vertex x="0" y="23.1648"/>
 <vertex x="45.4152" y="23.1648"/>
@@ -2343,8 +2442,20 @@ design rules under a new name.</description>
 <contactref element="CAM2" pad="2"/>
 <contactref element="CAM2" pad="15"/>
 <via x="8.382" y="2.667" extent="1-16" drill="0.381"/>
-<wire x1="5.1816" y1="1.8034" x2="-13.3256" y2="-7.6802" width="0" layer="19" extent="16-16"/>
-<wire x1="-16.2382" y1="26.098" x2="1.9812" y2="15.8242" width="0" layer="19" extent="16-16"/>
+<via x="18.3642" y="13.5636" extent="1-16" drill="0.381"/>
+<contactref element="SW1" pad="3" route="any" routetag="S"/>
+<contactref element="SW1" pad="4" route="any" routetag="S"/>
+<contactref element="SW1" pad="CASE"/>
+<contactref element="C21" pad="2"/>
+<contactref element="SW2" pad="3" route="any" routetag="S"/>
+<contactref element="SW2" pad="4" route="any" routetag="S"/>
+<contactref element="SW2" pad="CASE"/>
+<contactref element="C22" pad="2"/>
+<contactref element="C2" pad="2"/>
+<contactref element="SW3" pad="4" route="any" routetag="S"/>
+<contactref element="SW3" pad="3" route="any" routetag="S"/>
+<contactref element="SW3" pad="CASE"/>
+<contactref element="R9" pad="2"/>
 </signal>
 <signal name="1.8V">
 <contactref element="CAM1" pad="10"/>
@@ -2414,7 +2525,12 @@ design rules under a new name.</description>
 <wire x1="4.191" y1="11.8872" x2="4.191" y2="18.1356" width="0.1524" layer="2"/>
 <wire x1="4.191" y1="11.8872" x2="2.1336" y2="9.8298" width="0.1524" layer="2"/>
 <wire x1="2.1336" y1="9.8298" x2="1.9812" y2="9.8298" width="0.1524" layer="2"/>
-<wire x1="7.0104" y1="15.8242" x2="34.8996" y2="13.8684" width="0" layer="19" extent="1-16"/>
+<via x="27.6606" y="18.2118" extent="1-16" drill="0.381"/>
+<wire x1="34.8996" y1="13.8684" x2="32.3088" y2="13.8684" width="0.1524" layer="16"/>
+<wire x1="27.6606" y1="18.2118" x2="27.9654" y2="18.2118" width="0.1524" layer="16"/>
+<wire x1="27.9654" y1="18.2118" x2="32.3088" y2="13.8684" width="0.1524" layer="16"/>
+<wire x1="27.6606" y1="18.2118" x2="4.2672" y2="18.2118" width="0.1524" layer="3"/>
+<wire x1="4.2672" y1="18.2118" x2="4.191" y2="18.1356" width="0.1524" layer="3"/>
 </signal>
 <signal name="2.8V">
 <contactref element="C3" pad="1"/>
@@ -2659,7 +2775,6 @@ design rules under a new name.</description>
 <wire x1="1.9812" y1="11.5062" x2="2.2098" y2="11.5062" width="0.3048" layer="16"/>
 <wire x1="2.2098" y1="11.5062" x2="2.8194" y2="12.1158" width="0.3048" layer="16"/>
 <wire x1="2.786" y1="12.6064" x2="2.8194" y2="12.573" width="0.1524" layer="16"/>
-<wire x1="22.0218" y1="13.8684" x2="13.716" y2="4.8133" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="3.3V">
 <contactref element="C13" pad="1"/>
@@ -2724,22 +2839,50 @@ design rules under a new name.</description>
 <signal name="UARTA_TX">
 <contactref element="SOM1" pad="J1.72"/>
 <contactref element="JP1" pad="5"/>
-<wire x1="11.04" y1="15.7024" x2="32.6256" y2="18.7728" width="0" layer="19" extent="1-1"/>
+<wire x1="11.04" y1="15.7024" x2="11.04" y2="16.6878" width="0.1524" layer="1"/>
+<wire x1="11.04" y1="16.6878" x2="11.4972" y2="17.145" width="0.1524" layer="1"/>
+<wire x1="11.4972" y1="17.145" x2="32.2326" y2="17.145" width="0.1524" layer="1"/>
+<wire x1="32.2326" y1="17.145" x2="33.147" y2="18.0594" width="0.1524" layer="1"/>
+<wire x1="33.147" y1="18.0594" x2="33.147" y2="18.9132" width="0.1524" layer="1"/>
+<wire x1="33.147" y1="18.9132" x2="33.159" y2="18.9252" width="0.1524" layer="1"/>
 </signal>
 <signal name="UARTA_RX">
 <contactref element="SOM1" pad="J1.70"/>
 <contactref element="JP1" pad="4"/>
-<wire x1="11.44" y1="15.7024" x2="33.1256" y2="18.7728" width="0" layer="19" extent="1-1"/>
+<wire x1="11.44" y1="15.7024" x2="11.43" y2="15.7124" width="0.1524" layer="1"/>
+<wire x1="11.43" y1="15.7124" x2="11.43" y2="16.5354" width="0.1524" layer="1"/>
+<wire x1="11.43" y1="16.5354" x2="11.6586" y2="16.764" width="0.1524" layer="1"/>
+<wire x1="11.6586" y1="16.764" x2="32.385" y2="16.764" width="0.1524" layer="1"/>
+<wire x1="32.385" y1="16.764" x2="33.659" y2="18.038" width="0.1524" layer="1"/>
+<wire x1="33.659" y1="18.038" x2="33.659" y2="18.9252" width="0.1524" layer="1"/>
 </signal>
 <signal name="UARTA_RTS">
 <contactref element="SOM1" pad="J1.74"/>
 <contactref element="JP1" pad="2"/>
-<wire x1="10.64" y1="15.7024" x2="34.1256" y2="18.7728" width="0" layer="19" extent="1-1"/>
+<wire x1="24.2316" y1="12.7254" x2="27.8892" y2="16.383" width="0.1524" layer="1"/>
+<wire x1="27.8892" y1="16.383" x2="33.0708" y2="16.383" width="0.1524" layer="1"/>
+<wire x1="33.0708" y1="16.383" x2="34.671" y2="17.9832" width="0.1524" layer="1"/>
+<wire x1="34.671" y1="17.9832" x2="34.671" y2="18.9132" width="0.1524" layer="1"/>
+<wire x1="34.671" y1="18.9132" x2="34.659" y2="18.9252" width="0.1524" layer="1"/>
+<wire x1="10.64" y1="15.7024" x2="10.64" y2="14.2976" width="0.1524" layer="1"/>
+<wire x1="10.64" y1="14.2976" x2="10.3632" y2="14.0208" width="0.1524" layer="1"/>
+<wire x1="10.3632" y1="14.0208" x2="10.3632" y2="13.1826" width="0.1524" layer="1"/>
+<wire x1="10.3632" y1="13.1826" x2="10.8204" y2="12.7254" width="0.1524" layer="1"/>
+<wire x1="10.8204" y1="12.7254" x2="24.2316" y2="12.7254" width="0.1524" layer="1"/>
 </signal>
 <signal name="UARTA_CTS">
 <contactref element="SOM1" pad="J1.68"/>
 <contactref element="JP1" pad="6"/>
-<wire x1="11.84" y1="15.7024" x2="32.1256" y2="18.7728" width="0" layer="19" extent="1-1"/>
+<via x="12.6492" y="13.5636" extent="1-16" drill="0.381"/>
+<wire x1="11.84" y1="15.7024" x2="11.84" y2="14.3728" width="0.1524" layer="1"/>
+<wire x1="11.84" y1="14.3728" x2="12.6492" y2="13.5636" width="0.1524" layer="1"/>
+<wire x1="12.6492" y1="13.5636" x2="14.7066" y2="13.5636" width="0.1524" layer="2"/>
+<wire x1="14.7066" y1="13.5636" x2="20.0406" y2="18.8976" width="0.1524" layer="2"/>
+<wire x1="20.0406" y1="18.8976" x2="27.5844" y2="18.8976" width="0.1524" layer="2"/>
+<via x="28.4226" y="19.7358" extent="1-16" drill="0.381"/>
+<wire x1="32.659" y1="18.9252" x2="29.2332" y2="18.9252" width="0.1524" layer="1"/>
+<wire x1="29.2332" y1="18.9252" x2="28.4226" y2="19.7358" width="0.1524" layer="1"/>
+<wire x1="27.5844" y1="18.8976" x2="28.4226" y2="19.7358" width="0.1524" layer="2"/>
 </signal>
 <signal name="UARTB_TX">
 <contactref element="SOM1" pad="J2.43"/>
@@ -2821,22 +2964,91 @@ design rules under a new name.</description>
 </signal>
 <signal name="MSTR_NRST">
 <contactref element="SOM1" pad="J2.92"/>
-<contactref element="S1" pad="P$1"/>
 <contactref element="C21" pad="1"/>
-<wire x1="4.7502" y1="-2.9718" x2="-13.3256" y2="-8.6454" width="0" layer="19" extent="1-16"/>
-<wire x1="7.04" y1="4.5224" x2="4.7502" y2="-2.9718" width="0" layer="19" extent="1-1"/>
+<contactref element="SW2" pad="1" route="any" routetag="P"/>
+<contactref element="SW2" pad="2" route="any" routetag="P"/>
+<via x="15.4686" y="21.336" extent="1-16" drill="0.381"/>
+<wire x1="13.94" y1="20.193" x2="14.4018" y2="20.193" width="0.1524" layer="1"/>
+<wire x1="14.4018" y1="20.193" x2="15.0114" y2="20.193" width="0.1524" layer="1"/>
+<wire x1="15.0114" y1="20.193" x2="15.4686" y2="20.6502" width="0.1524" layer="1"/>
+<wire x1="15.4686" y1="20.6502" x2="15.4686" y2="21.336" width="0.1524" layer="1"/>
+<wire x1="14.1044" y1="20.2812" x2="14.3136" y2="20.2812" width="0.1524" layer="1"/>
+<wire x1="14.3136" y1="20.2812" x2="14.4018" y2="20.193" width="0.1524" layer="1"/>
+<wire x1="13.8684" y1="21.5138" x2="15.2908" y2="21.5138" width="0.1524" layer="16"/>
+<wire x1="15.2908" y1="21.5138" x2="15.4686" y2="21.336" width="0.1524" layer="16"/>
+<wire x1="7.04" y1="4.5224" x2="7.04" y2="5.4102" width="0.1524" layer="1"/>
+<wire x1="7.04" y1="5.4102" x2="6.7352" y2="5.715" width="0.1524" layer="1"/>
+<wire x1="6.7352" y1="5.715" x2="4.0386" y2="5.715" width="0.1524" layer="1"/>
+<wire x1="4.0386" y1="5.715" x2="2.8956" y2="6.858" width="0.1524" layer="1"/>
+<wire x1="2.8956" y1="6.858" x2="2.8956" y2="21.336" width="0.1524" layer="1"/>
+<via x="2.8956" y="21.336" extent="1-16" drill="0.381"/>
+<wire x1="2.8956" y1="21.336" x2="15.4686" y2="21.336" width="0.1524" layer="3"/>
 </signal>
 <signal name="PWRON">
 <contactref element="SOM1" pad="J1.5"/>
-<contactref element="S2" pad="P$1"/>
 <contactref element="C22" pad="1"/>
-<wire x1="4.7502" y1="29.8704" x2="24.24" y2="18.6424" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.273" y1="26.098" x2="4.7502" y2="29.8704" width="0" layer="19" extent="1-16"/>
+<contactref element="SW1" pad="1" route="any" routetag="P"/>
+<contactref element="SW1" pad="2" route="any" routetag="P"/>
+<wire x1="24.24" y1="18.6424" x2="24.24" y2="19.4988" width="0.1524" layer="1"/>
+<wire x1="24.24" y1="19.4988" x2="23.8506" y2="19.8882" width="0.1524" layer="1"/>
+<wire x1="23.8506" y1="19.8882" x2="23.8506" y2="20.2692" width="0.1524" layer="1"/>
+<wire x1="23.8506" y1="20.2692" x2="23.8506" y2="20.8788" width="0.1524" layer="1"/>
+<wire x1="23.8506" y1="20.8788" x2="24.3078" y2="21.336" width="0.1524" layer="1"/>
+<wire x1="27.1272" y1="20.2692" x2="27.1272" y2="20.2738" width="0.1524" layer="1"/>
+<wire x1="27.1272" y1="20.2738" x2="27.1198" y2="20.2812" width="0.1524" layer="1"/>
+<via x="25.7556" y="21.336" extent="1-16" drill="0.381"/>
+<wire x1="24.3078" y1="21.336" x2="25.7556" y2="21.336" width="0.1524" layer="1"/>
+<wire x1="23.0198" y1="20.2812" x2="23.0318" y2="20.2692" width="0.1524" layer="1"/>
+<wire x1="23.0318" y1="20.2692" x2="23.8506" y2="20.2692" width="0.1524" layer="1"/>
+<wire x1="33.528" y1="20.5486" x2="33.5026" y2="20.574" width="0.1524" layer="16"/>
+<wire x1="33.5026" y1="20.574" x2="32.6898" y2="20.574" width="0.1524" layer="16"/>
+<wire x1="32.6898" y1="20.574" x2="31.9278" y2="21.336" width="0.1524" layer="16"/>
+<wire x1="31.9278" y1="21.336" x2="25.7556" y2="21.336" width="0.1524" layer="16"/>
+</signal>
+<signal name="N$1">
+<contactref element="SOM1" pad="J1.24"/>
+</signal>
+<signal name="N$2">
+<contactref element="SOM1" pad="J2.4" route="any" routetag="V+"/>
+<contactref element="SOM1" pad="J2.7" route="any" routetag="V+"/>
+</signal>
+<signal name="USER_SW">
+<contactref element="SOM1" pad="J2.56"/>
+<contactref element="SW3" pad="1" route="any" routetag="P"/>
+<contactref element="SW3" pad="2" route="any" routetag="P"/>
+<contactref element="C2" pad="1"/>
+<via x="6.9342" y="20.4978" extent="1-16" drill="0.381"/>
+<wire x1="5.2652" y1="20.2812" x2="6.7176" y2="20.2812" width="0.1524" layer="1"/>
+<wire x1="6.7176" y1="20.2812" x2="6.9342" y2="20.4978" width="0.1524" layer="1"/>
+<wire x1="8.5344" y1="20.5486" x2="8.4836" y2="20.4978" width="0.1524" layer="16"/>
+<wire x1="8.4836" y1="20.4978" x2="6.9342" y2="20.4978" width="0.1524" layer="16"/>
+<wire x1="14.24" y1="4.5224" x2="14.2494" y2="4.5318" width="0.1524" layer="1"/>
+<wire x1="14.2494" y1="4.5318" x2="14.2494" y2="5.715" width="0.1524" layer="1"/>
+<wire x1="14.2494" y1="5.715" x2="13.8684" y2="6.096" width="0.1524" layer="1"/>
+<wire x1="13.8684" y1="6.096" x2="4.3434" y2="6.096" width="0.1524" layer="1"/>
+<wire x1="4.3434" y1="6.096" x2="3.3528" y2="7.0866" width="0.1524" layer="1"/>
+<wire x1="3.3528" y1="7.0866" x2="3.3528" y2="19.2786" width="0.1524" layer="1"/>
+<wire x1="3.3528" y1="19.2786" x2="4.3554" y2="20.2812" width="0.1524" layer="1"/>
+<wire x1="4.3554" y1="20.2812" x2="5.2652" y2="20.2812" width="0.1524" layer="1"/>
+</signal>
+<signal name="USER_LED">
+<contactref element="SOM1" pad="J2.58"/>
+<contactref element="LED1" pad="A"/>
+<wire x1="13.84" y1="4.5224" x2="13.84" y2="3.7054" width="0.1524" layer="1"/>
+<wire x1="13.84" y1="3.7054" x2="13.0302" y2="2.8956" width="0.1524" layer="1"/>
+<wire x1="13.0302" y1="2.8956" x2="13.0302" y2="0.8382" width="0.1524" layer="1"/>
+<wire x1="13.0302" y1="0.8382" x2="13.4112" y2="0.4572" width="0.1524" layer="1"/>
+<wire x1="13.4112" y1="0.4572" x2="25.6914" y2="0.4572" width="0.1524" layer="1"/>
+<wire x1="25.6914" y1="0.4572" x2="30.7848" y2="5.5506" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$3">
-<contactref element="S1" pad="P$2"/>
-<contactref element="S2" pad="P$2"/>
-<wire x1="-1.5498" y1="-2.9718" x2="-1.5498" y2="29.8704" width="0" layer="19" extent="1-1"/>
+<contactref element="LED1" pad="C"/>
+<contactref element="R9" pad="1"/>
+<via x="29.337" y="2.0574" extent="1-16" drill="0.381"/>
+<wire x1="29.337" y1="2.0574" x2="30.7848" y2="2.0574" width="0.1524" layer="16"/>
+<wire x1="30.7848" y1="2.0574" x2="30.7848" y2="2.0066" width="0.1524" layer="16"/>
+<wire x1="29.337" y1="2.0574" x2="30.7848" y2="3.5052" width="0.1524" layer="1"/>
+<wire x1="30.7848" y1="3.5052" x2="30.7848" y2="4.0506" width="0.1524" layer="1"/>
 </signal>
 </signals>
 </board>
