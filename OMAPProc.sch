@@ -3663,7 +3663,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <attributes>
 <attribute name="AUTHOR" value="Ryan Julian (ryanjulian@berkeley.edu)"/>
 <attribute name="DESIGN_NAME" value="OMAPProc"/>
-<attribute name="REVISION" value="B"/>
+<attribute name="REVISION" value="A"/>
 <attribute name="YEAR" value="2012"/>
 </attributes>
 <variantdefs>
