@@ -2766,6 +2766,10 @@ Source: http://www.ti.com/lit/ml/mpqf116g/mpqf116g.pdf</description>
 </symbols>
 <devicesets>
 <deviceset name="TORPEDO_DM3730" prefix="SOM">
+<description>LogicPD Torpeod DM3730 System-On-Module&lt;br&gt;&lt;br&gt;
+
+Mating connector HiRose DF40C-100DS-0.4V(51)&lt;br&gt;
+Digi-Key P/N: H11615CT-ND</description>
 <gates>
 <gate name="_CLOCKRESET" symbol="TORPEDO_DM3730_CLOCKRESET" x="-129.54" y="200.66"/>
 <gate name="_ADC" symbol="TORPEDO_DM3730_ADC" x="-129.54" y="167.64"/>
@@ -2967,7 +2971,9 @@ Source: http://www.ti.com/lit/ml/mpqf116g/mpqf116g.pdf</description>
 <connect gate="_USB" pin="USB1_VBUS" pad="J2.11 J2.13"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="460-3514-ND"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2988,6 +2994,8 @@ Standard 8.5x11 US Letter frame</description>
 </devices>
 </deviceset>
 <deviceset name="LI-VM01CM" prefix="CAM">
+<description>VGA camera module for OMAP Backpack&lt;br&gt;&lt;br&gt;
+Digi-Key P/N refers to the appropriate mating connector</description>
 <gates>
 <gate name="_S" symbol="LI-VM01CM" x="0" y="0"/>
 <gate name="_DVDD" symbol="V+" x="45.72" y="2.54"/>
@@ -3022,7 +3030,9 @@ Standard 8.5x11 US Letter frame</description>
 <connect gate="_S" pin="VSYNC" pad="14"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="255-3150-1-ND"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3319,6 +3329,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </devices>
 </deviceset>
 <deviceset name="MOLEX_503480-0600" prefix="JP">
+<description>Molex FPC connector, 6 pos.</description>
 <gates>
 <gate name="G$1" symbol="M06" x="0" y="0"/>
 </gates>
@@ -3333,15 +3344,15 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <connect gate="G$1" pin="6" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="WM1387CT-ND" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="MIC5335-SPYMT" prefix="IC">
-<description>Micrel MIC5335 150mA dual (3.3V/3.0V) voltage regulator.
-&lt;br&gt;&lt;br&gt;
-Digi-Key P/N: 576-1949-6-ND</description>
+<description>Micrel MIC5335 150mA dual (3.3V/3.0V) voltage regulator.</description>
 <gates>
 <gate name="G$1" symbol="MIC5335-SPYMT" x="0" y="0"/>
 </gates>
@@ -3356,15 +3367,15 @@ Digi-Key P/N: 576-1949-6-ND</description>
 <connect gate="G$1" pin="VIN" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="576-1949-1-ND" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="MICROSD" prefix="SDCARD">
-<description>AVX 045138008010890+ microSD card connector.
-
-Digi-Key P/N: 478-4965-1-ND</description>
+<description>AVX 045138008010890+ microSD card connector</description>
 <gates>
 <gate name="G$1" symbol="MICROSD" x="0" y="0"/>
 </gates>
@@ -3384,7 +3395,9 @@ Digi-Key P/N: 478-4965-1-ND</description>
 <connect gate="G$1" pin="VSS" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="478-4965-1-ND"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3429,9 +3442,7 @@ Digi-Key P/N: 478-4965-1-ND</description>
 </devices>
 </deviceset>
 <deviceset name="MIC5335-MGYMT" prefix="IC">
-<description>Micrel MIC5335 150mA dual (2.8V/1.8V) voltage regulator.
-&lt;br&gt;&lt;br&gt;
-Digi-Key P/N: 576-1949-6-ND</description>
+<description>Micrel MIC5335 150mA dual (2.8V/1.8V) voltage regulator.</description>
 <gates>
 <gate name="G$1" symbol="MIC5335-MGYMT" x="0" y="0"/>
 </gates>
@@ -3446,18 +3457,16 @@ Digi-Key P/N: 576-1949-6-ND</description>
 <connect gate="G$1" pin="VIN" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="576-3670-1-ND" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="TXS0108E" prefix="IC">
 <description>8-BIT BIDIRECTIONAL VOLTAGE-LEVEL TRANSLATOR&lt;br&gt;
-FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS
-&lt;br&gt;&lt;br&gt;
-Digi-Key P/N
-&lt;br&gt;PW: 296-23011-1-ND
-&lt;br&gt;RGY: 296-24806-1-ND</description>
+FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <gates>
 <gate name="G$1" symbol="TXS0108E" x="0" y="0"/>
 </gates>
@@ -3486,7 +3495,9 @@ Digi-Key P/N
 <connect gate="G$1" pin="VCCB" pad="19"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="296-23011-1-ND " constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="RGY" package="R-PVQFN-N20">
@@ -3513,12 +3524,17 @@ Digi-Key P/N
 <connect gate="G$1" pin="VCCB" pad="19"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="296-24806-1-ND" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="ECAM50_5642_MOD" prefix="CAM">
+<description>e-con Systems 5MP AF camera module&lt;br&gt;&lt;br&gt;
+
+Digi-Key P/N is for the appropriate mating connector.</description>
 <gates>
 <gate name="_S" symbol="ECAM50_5642_MOD" x="0" y="0"/>
 <gate name="_AFVCC" symbol="V+-" x="30.48" y="2.54"/>
@@ -3553,13 +3569,15 @@ Digi-Key P/N
 <connect gate="_S" pin="XCLK" pad="13"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="OR877CT-ND" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="KMR421G">
-<description>Digikey P/N: CKN10249CT-ND</description>
+<deviceset name="KMR421G" prefix="SW" uservalue="yes">
+<description>SWITCH TACTILE SPST-NO 0.05A 32V</description>
 <gates>
 <gate name="G$1" symbol="TACT_SWITCH_2TERM" x="0" y="0"/>
 </gates>
@@ -3571,7 +3589,9 @@ Digi-Key P/N
 <connect gate="G$1" pin="S" pad="3 4" route="any"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="CKN10249CT-ND"/>
+</technology>
 </technologies>
 </device>
 </devices>
