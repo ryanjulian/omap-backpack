@@ -3683,7 +3683,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <attributes>
 <attribute name="AUTHOR" value="Ryan Julian (ryanjulian@berkeley.edu)"/>
 <attribute name="DESIGN_NAME" value="OMAPProc"/>
-<attribute name="REVISION" value="A"/>
+<attribute name="REVISION" value="B"/>
 <attribute name="YEAR" value="2012"/>
 </attributes>
 <variantdefs>
@@ -3789,6 +3789,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="GND28" library="biomimetic" deviceset="GND" device=""/>
 <part name="R9" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="330"/>
 <part name="GND29" library="biomimetic" deviceset="GND" device=""/>
+<part name="JP3" library="biomimetic" deviceset="MOLEX_503480-0600" device="" value="USB"/>
+<part name="GND30" library="biomimetic" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3800,7 +3802,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="SOM1" gate="_CSI" x="190.5" y="127"/>
 <instance part="SOM1" gate="_I2C" x="190.5" y="160.02"/>
 <instance part="SOM1" gate="_SDMMC" x="190.5" y="76.2"/>
-<instance part="SOM1" gate="_UART" x="66.04" y="106.68"/>
+<instance part="SOM1" gate="_UART" x="66.04" y="111.76"/>
 <instance part="SOM1" gate="_DGND" x="25.4" y="17.78" smashed="yes">
 <attribute name="NAME" x="27.94" y="5.08" size="1.778" layer="95"/>
 </instance>
@@ -3814,7 +3816,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="R1" gate="G$1" x="137.16" y="160.02"/>
 <instance part="R2" gate="G$1" x="137.16" y="152.4"/>
 <instance part="U$3" gate="G$1" x="129.54" y="162.56"/>
-<instance part="SOM1" gate="_GPIO" x="66.04" y="66.04"/>
+<instance part="SOM1" gate="_GPIO" x="66.04" y="76.2"/>
 <instance part="C20" gate="G$1" x="30.48" y="17.78"/>
 <instance part="U$14" gate="G$1" x="25.4" y="27.94"/>
 <instance part="GND24" gate="1" x="25.4" y="5.08"/>
@@ -3824,6 +3826,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="SOM1" gate="VIO_1V8" x="58.42" y="5.08" smashed="yes">
 <attribute name="NAME" x="60.96" y="12.7" size="1.778" layer="95"/>
 </instance>
+<instance part="SOM1" gate="_USB" x="66.04" y="48.26"/>
 </instances>
 <busses>
 </busses>
@@ -3994,50 +3997,50 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <net name="SD1_CD" class="0">
 <segment>
 <pinref part="SOM1" gate="_GPIO" pin="UP_GPIO_127"/>
-<wire x1="91.44" y1="66.04" x2="96.52" y2="66.04" width="0.1524" layer="91"/>
-<label x="99.06" y="66.04" size="1.778" layer="95"/>
+<wire x1="91.44" y1="76.2" x2="96.52" y2="76.2" width="0.1524" layer="91"/>
+<label x="99.06" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UARTA_TX" class="0">
 <segment>
 <pinref part="SOM1" gate="_UART" pin="UP_UARTA_TX"/>
-<wire x1="40.64" y1="114.3" x2="35.56" y2="114.3" width="0.1524" layer="91"/>
-<label x="20.32" y="114.3" size="1.778" layer="95"/>
+<wire x1="40.64" y1="119.38" x2="35.56" y2="119.38" width="0.1524" layer="91"/>
+<label x="20.32" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UARTA_RX" class="0">
 <segment>
 <pinref part="SOM1" gate="_UART" pin="UP_UARTA_RX"/>
-<wire x1="40.64" y1="111.76" x2="35.56" y2="111.76" width="0.1524" layer="91"/>
-<label x="20.32" y="111.76" size="1.778" layer="95"/>
+<wire x1="40.64" y1="116.84" x2="35.56" y2="116.84" width="0.1524" layer="91"/>
+<label x="20.32" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UARTA_RTS" class="0">
 <segment>
 <pinref part="SOM1" gate="_UART" pin="UP_UARTA_RTS"/>
-<wire x1="40.64" y1="109.22" x2="35.56" y2="109.22" width="0.1524" layer="91"/>
-<label x="20.32" y="109.22" size="1.778" layer="95"/>
+<wire x1="40.64" y1="114.3" x2="35.56" y2="114.3" width="0.1524" layer="91"/>
+<label x="20.32" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UARTA_CTS" class="0">
 <segment>
 <pinref part="SOM1" gate="_UART" pin="UP_UARTA_CTS"/>
-<wire x1="40.64" y1="106.68" x2="35.56" y2="106.68" width="0.1524" layer="91"/>
-<label x="20.32" y="106.68" size="1.778" layer="95"/>
+<wire x1="40.64" y1="111.76" x2="35.56" y2="111.76" width="0.1524" layer="91"/>
+<label x="20.32" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UARTB_TX" class="0">
 <segment>
 <pinref part="SOM1" gate="_UART" pin="UP_UARTB_TX"/>
-<wire x1="40.64" y1="101.6" x2="35.56" y2="101.6" width="0.1524" layer="91"/>
-<label x="20.32" y="101.6" size="1.778" layer="95"/>
+<wire x1="40.64" y1="106.68" x2="35.56" y2="106.68" width="0.1524" layer="91"/>
+<label x="20.32" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UARTB_RX" class="0">
 <segment>
 <pinref part="SOM1" gate="_UART" pin="UP_UARTB_RX"/>
-<wire x1="40.64" y1="99.06" x2="35.56" y2="99.06" width="0.1524" layer="91"/>
-<label x="20.32" y="99.06" size="1.778" layer="95"/>
+<wire x1="40.64" y1="104.14" x2="35.56" y2="104.14" width="0.1524" layer="91"/>
+<label x="20.32" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="!RESET" class="0">
@@ -4100,15 +4103,36 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <net name="USER_SW" class="0">
 <segment>
 <pinref part="SOM1" gate="_GPIO" pin="UP_GPIO_128"/>
-<wire x1="91.44" y1="63.5" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
-<label x="99.06" y="63.5" size="1.778" layer="95"/>
+<wire x1="91.44" y1="73.66" x2="96.52" y2="73.66" width="0.1524" layer="91"/>
+<label x="99.06" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USER_LED" class="0">
 <segment>
 <pinref part="SOM1" gate="_GPIO" pin="UP_GPIO_129"/>
-<wire x1="91.44" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
-<label x="99.06" y="60.96" size="1.778" layer="95"/>
+<wire x1="91.44" y1="71.12" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
+<label x="99.06" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="USB1_VBUS" class="0">
+<segment>
+<pinref part="SOM1" gate="_USB" pin="USB1_VBUS"/>
+<wire x1="40.64" y1="50.8" x2="35.56" y2="50.8" width="0.1524" layer="91"/>
+<label x="17.78" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="USB1_D-" class="0">
+<segment>
+<pinref part="SOM1" gate="_USB" pin="USB1_D-"/>
+<wire x1="40.64" y1="45.72" x2="35.56" y2="45.72" width="0.1524" layer="91"/>
+<label x="17.78" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="USB1_D+" class="0">
+<segment>
+<pinref part="SOM1" gate="_USB" pin="USB1_D+"/>
+<wire x1="40.64" y1="43.18" x2="35.56" y2="43.18" width="0.1524" layer="91"/>
+<label x="17.78" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -4176,6 +4200,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <attribute name="NAME" x="30.48" y="30.48" size="1.778" layer="95"/>
 </instance>
 <instance part="GND23" gate="1" x="27.94" y="132.08"/>
+<instance part="JP3" gate="G$1" x="121.92" y="88.9" rot="R180"/>
+<instance part="GND30" gate="1" x="111.76" y="76.2"/>
 </instances>
 <busses>
 </busses>
@@ -4405,6 +4431,12 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="27.94" y1="137.16" x2="27.94" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="GND23" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="6"/>
+<wire x1="114.3" y1="81.28" x2="111.76" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="GND30" gate="1" pin="GND"/>
+<wire x1="111.76" y1="78.74" x2="111.76" y2="81.28" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="1.8V" class="0">
 <segment>
@@ -4472,6 +4504,27 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pinref part="CAM2" gate="_S" pin="!RESET"/>
 <wire x1="157.48" y1="139.7" x2="154.94" y2="139.7" width="0.1524" layer="91"/>
 <label x="139.7" y="139.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="USB1_VBUS" class="0">
+<segment>
+<pinref part="JP3" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="93.98" x2="111.76" y2="93.98" width="0.1524" layer="91"/>
+<label x="96.52" y="93.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="USB1_D-" class="0">
+<segment>
+<pinref part="JP3" gate="G$1" pin="3"/>
+<wire x1="114.3" y1="88.9" x2="111.76" y2="88.9" width="0.1524" layer="91"/>
+<label x="96.52" y="88.9" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="USB1_D+" class="0">
+<segment>
+<pinref part="JP3" gate="G$1" pin="4"/>
+<wire x1="114.3" y1="86.36" x2="111.76" y2="86.36" width="0.1524" layer="91"/>
+<label x="96.52" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
